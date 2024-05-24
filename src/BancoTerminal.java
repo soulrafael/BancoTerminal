@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
+import Usuario.Usuario;
+
 public class BancoTerminal {
-    Scanner entrada = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!Banco Terminal");
-        Login(null, null);
-
-
-
-
-
-
+        Login();
 
     }
-    public static void Login(String usuario, String senha){
+    public static void Login(){
+        Scanner entrada = new Scanner(System.in);
+        Usuario pessoa = new Usuario();
+        pessoa.nome = entrada.next();
+        System.out.println("Teste  "+ pessoa.nome);
+
 
     }
 }

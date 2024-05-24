@@ -4,6 +4,7 @@ public class Usuario {
     public String nome;
     public int cpf;
     public int idade;
+    public String senha;
 
     
 }

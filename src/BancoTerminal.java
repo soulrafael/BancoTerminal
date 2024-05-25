@@ -6,7 +6,7 @@ public class BancoTerminal {
     public static void main(String[] args) throws Exception {
         Scanner entrada = new Scanner(System.in);
 
-    double saldo = 5000.0;   
+    double saldo=0 ;   
     double depositar; 
     double sacar;
 //menu de escolher as opçoes no terminal
@@ -28,17 +28,24 @@ do{
                     }else{
                         System.out.println("Saldo insuficiente ! Saldo Atual: "+saldo);
                     }
+                    System.out.println("Deseja sair DIGITE 3 ou digite 2 para depositar");
+                    escolhaServiço = entrada.nextInt();
+                    System.out.println("Saindo");
             break;
                  case 2:
+                 System.out.print("Digite o valor que deseja Depositar:");
                  depositar =  entrada.nextDouble();
                  saldo = saldo + depositar;
                  System.out.println("Seu saldo atual é :"+ saldo);
+                 System.out.println("Deseja sair DIGITE 3 ou Digite 1 para sacar");
+                 escolhaServiço = entrada.nextInt();
+                 System.out.println("Saindo");
                     break;
     
         default:
             break;
                 }
-            } while (escolhaServiço==2);
+            } while (escolhaServiço==2||escolhaServiço==1);
     }
 
 

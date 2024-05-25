@@ -6,5 +6,6 @@ public class Usuario {
     public int idade;
     public String senha;
 
+
     
 }
